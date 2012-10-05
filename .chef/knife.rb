@@ -14,7 +14,7 @@ cache_type               'BasicFile'
 cache_options( :path => "#{ENV['HOME']}/.chef/checksums" )
 cookbook_path            ["#{current_dir}/../cookbooks", "#{current_dir}/../custom-cookbooks"]
 
-cookbook_copyright       "ORGANISATION NAMW"
+cookbook_copyright       "ORGANISATION NAME"
 cookbook_email           "admin@ORGANISATION.com"
 
 bootstrap_version        "10.14.4"
