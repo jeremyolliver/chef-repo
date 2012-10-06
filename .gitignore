@@ -1,2 +1,3 @@
+.chef/*.pem
 .rake_test_cache
 .vagrant

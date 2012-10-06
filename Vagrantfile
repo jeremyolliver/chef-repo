@@ -7,20 +7,22 @@ Vagrant::Config.run do |config|
   # please see the online documentation at vagrantup.com.
 
   config.vm.define :chefserver do |chefserver|
-    chefserver.vm.box = "ubuntu12.04"
+    chefserver.vm.box = "ubuntu10.04"
     chefserver.vm.forward_port 4000, 4000
+    chefserver.vm.forward_port 4040, 4040
+    chefserver.vm.network :hostonly, "192.168.1.10"
   end
 
   config.vm.define :ubuntu12 do |u12|
     u12.vm.box = "ubuntu12.04"
     u12.vm.boot_mode = :headless
-    # u12.vm.network :hostonly, "192.168.1.10"
+    u12.vm.network :hostonly, "192.168.1.11"
   end
 
   config.vm.define :ubuntu10 do |u10|
     u10.vm.box = "ubuntu10.04"
     u10.vm.boot_mode = :headless
-    # u10.vm.network :hostonly, "192.168.1.11"
+    u10.vm.network :hostonly, "192.168.1.12"
   end
 
   # Every Vagrant virtual environment requires a box to build off of.
