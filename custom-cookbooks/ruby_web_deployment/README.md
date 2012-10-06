@@ -19,7 +19,7 @@ Usage
 =====
 
 include ruby\_web\_deployment::passenger (or another recipe provided) in your run_list for the node.
-Database installation is not included in this recipe, that should be installed/included as a separate cookbook
+Database installation is not included in this recipe, intentionally to keep that relatively agnostic, and swappable per project. Install a database with a separate cookbook. Many exist on the community cookbooks site, for example: postgresql91, mysql, mongodb, redisio, elastic_search
 
 This sets up the server prepared for deploying ruby applications via capistrano or a similar tool into:
 
