@@ -1,7 +1,3 @@
-## v1.0.2:
-
-* [COOK-1636] - relax the version constraint on ohai
-
 ## v1.0.0:
 
 * [COOK-913] - defaults for gzip cause warning on service restart

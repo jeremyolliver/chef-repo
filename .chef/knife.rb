@@ -12,7 +12,7 @@ validation_key           "#{repo_root}/.chef/validation.pem"
 chef_server_url          'http://localhost:4000' # Change me
 cache_type               'BasicFile'
 cache_options( :path => "#{ENV['HOME']}/.chef/checksums" )
-cookbook_path            ["#{current_dir}/../cookbooks", "#{current_dir}/../custom-cookbooks"]
+cookbook_path            ["#{current_dir}/../cookbooks", "#{current_dir}/../vendor/cookbooks"]
 
 cookbook_copyright       "ORGANISATION NAME"
 cookbook_email           "admin@ORGANISATION.com"

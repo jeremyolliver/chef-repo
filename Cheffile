@@ -1,0 +1,21 @@
+site 'http://community.opscode.com/api/v1'
+
+# Ruby app deployment dependencies
+cookbook "rbenv"
+
+cookbook "postgresql91"
+cookbook "mongodb"
+
+# Generic server setup
+cookbook "newrelic_sysmond", :git => "https://github.com/jeremyolliver/cookbook-newrelic_sysmond"
+
+# Global useful stuff
+cookbook "git"
+cookbook "chef-client"
+cookbook "chef-server"
+cookbook "build-essential"
+
+# System concerns
+cookbook "apt", "1.4.2" # Later versions (at least as of 1.4.8) have bugs with notification triggering
+cookbook "ufw"
+cookbook "postfix"
