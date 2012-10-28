@@ -2,6 +2,7 @@ site 'http://community.opscode.com/api/v1'
 
 # Ruby app deployment dependencies
 cookbook "rbenv"
+cookbook "passenger", :path => "~/projects/jamoesotron/cookbooks/passenger"
 
 cookbook "postgresql91"
 cookbook "mongodb"
